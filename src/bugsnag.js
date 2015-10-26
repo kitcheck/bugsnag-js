@@ -306,8 +306,7 @@
     if (typeof BUGSNAG_TESTING !== "undefined" && self.testRequest) {
       self.testRequest(url, params);
     } else {
-      var img = new Image();
-      img.src = url;
+      $.get(url);
     }
   }
 
